@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!--<meta name="apple-mobile-web-app-capable" content="yes"/>-->
+    <meta content="email=no" name="format-detection"/>
+    <meta name='format-detection' content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="优好货H5">
+    <meta name="Keywords" content="优好货，优依互联网,youhaohuo">
+    <title>收藏夹</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/nav.css"/>
+    <link rel="stylesheet" href="../css/all.css"/>
+    <style>
+        body{
+            background:#EEF3FA;
+        }
+        #main{
+            position: relative;padding:45px 0 60px;
+        }
+        #main div.nothing{
+            padding:100px 0 50px;
+        }
+        #main div.nothing img{
+            width:50%;
+        }
+        #main div.nothing p{
+            color:#ccc;margin-top:5px;
+        }
+        #main div.nothing a{
+            border:1px  solid #C1C1C1;padding:8px 20px;margin-top: 10px;
+            color:#ccc;border-radius: 4px;
+        }
+        marquee{
+            background:#f3f3f3;font-size: 16px;text-align: left;
+            padding: 10px;position:fixed;top:0;margin: 0 auto;
+            left:0;z-index:100;width:100%;max-width: 800px;
+        }
+       marquee span{
+            font-weight: 600;color:#F81948;font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 内容部分-->
+    <div id="main">
+        <!-- 有收藏物品时-->
+        <div class="collect">
+            <marquee behavior="scroll" contenteditable="true" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="3"onmouseover="this.stop();" onmouseout="this.start();"> 
+            您收藏的<span>2</span>件物品就要下架了，快下手！
+            </marquee>
+            <!-- 内容-->
+            <ol class="goods_box over">
+                <li class="fl">
+                    <div class="goods_img">
+                        <a href="goods_order.html" class="block">
+                            <img src="../img/goods_1.jpg"/>
+                        </a>
+                    </div>
+                    <p class="goods_name over">
+                        <a href="goods_order.html" class="block">
+                            Estee Lauder 雅诗兰黛 青春抗皱滋润套装(日霜、精华、眼霜、洁面乳)
+                        </a>
+                    </p>
+                    <p class="price">
+                        <span>￥692</span>
+                        <s>￥792</s>
+                    </p>
+                    <div class="mall_name over">
+                        <img src="../img/tm_icon.png" class="mall_name_icon"/>
+                        <span>unineed官网直邮</span>
+                        <p class="fav"></p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <div class="goods_img">
+                        <a href="goods_order.html" class="block">
+                            <img src="../img/goods_1.jpg"/>
+                        </a>
+                    </div>
+                    <p class="goods_name over">
+                        <a href="goods_order.html" class="block">
+                            Estee Lauder 雅诗兰黛 青春抗皱滋润套装(日霜、精华、眼霜、洁面乳)
+                        </a>
+                    </p>
+                    <p class="price">
+                        <span>￥692</span>
+                        <s>￥792</s>
+                    </p>
+                    <div class="mall_name over">
+                        <img src="../img/tm_icon.png" class="mall_name_icon"/>
+                        <span>unineed官网直邮</span>
+                        <p class="fav"></p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <!-- 没有收藏物品时-->
+        <div class="nothing">
+            <div class="img">
+                <img src="../img/nothing_1.png"/>
+            </div>
+            <p>收藏夹空空如也</p>
+            <a onclick="phone_index()" class="block">去首页逛逛</a>
+        </div>
+    </div>
+    <!-- 底部固定菜单栏-->
+    <nav id="menuTab" class="nav">
+        <ul class="over">
+            <li class="fl">
+                <a onclick="phone_index()" class="block">
+                    <i></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="fl">
+                <a href="type.html" class="block">
+                    <i></i>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="cur fl">
+                <a href="collect.html" class="block">
+                    <i></i>
+                    <p>收藏夹</p>
+                </a>
+            </li>
+            <li class="fl">
+                <a href="myself.html" class="block">
+                    <i></i>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        function phone_index(){
+            window.location.href="../index.html"
+        }
+    </script>
+</body>
+</html>

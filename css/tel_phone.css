@@ -1,0 +1,25 @@
+#main{
+    background: #fff;text-align: left;
+}
+#main div{
+    padding:15px;font-size: 16px;border-bottom:5px solid #f3f3f3;
+}
+#main .time{
+    background:#f3f3f3;border:none;
+}
+#main div a{
+    width:100%;
+}
+#main div img{
+    width:33px;display:inline-block;margin-right:10px;
+}
+#main div p{
+    margin-top: 5px;
+}
+#main div a s{
+    float: right;width: 0;  height: 0;
+    display: inline-block;  margin-top:12px;
+    border-top: 5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #4a4a4a;border-right:0;
+}

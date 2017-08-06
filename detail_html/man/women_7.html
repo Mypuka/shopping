@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="email=no" name="format-detection"/>
+    <meta name='format-detection' content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="优好货H5">
+    <meta name="Keywords" content="优好货，优依互联网,youhaohuo">
+    <title>下单</title>
+    <link rel="icon" href="../../img/logo.ico">
+    <link rel="stylesheet" href="../../css/global.css"/>
+    <link rel="stylesheet" href="../../css/order.css"/>
+</head>
+<body>
+    <section class="over">
+    
+    </section>
+    <script src="../../js/zepto.min.js"></script>
+    <script src="../../js/order.js"></script>
+    <script src="../../js/data/all.js"></script>
+    <script>
+        $('section').empty();
+            (function  a(){
+                    var json=man_data[7];
+                    var html=`
+                         <div class='content'>
+                            <div class='good'>
+                                <div class='good_pic'>
+                                    <img src='../../img/all_img/${json.imgUrl}'/>
+                                </div>
+                                <div class='good_title over'>
+                                    ${json.title}
+                                </div>
+                                <div class='good_detail over'>
+                                    <div class='price fl'>
+                                        <span>￥${json.oldPrice}</span>
+                                    </div>
+                                    <div class='back_price fl'>
+                                        减 <span>${json.shengPrice}</span> <b>到手价：${json.nowPrice}</b>
+                                    </div>
+                                </div>
+                                <div class='over out_time'>
+                                    <span class='fl'>优惠券结束时间：</span>
+                                    <span class='fl'>${json.overTime}</span>
+                                </div>
+                                <div class='shop_name over'>
+                                    信用：
+                                    <img src='../../img/tm_icon.png'/>
+                                    来自：
+                                    <span>${json.name}</span>
+                                </div>
+                                <div class='foot over'>
+                                    <a href='javascript:;' class='block link'>
+                                        领券下单购买
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--口令 弹出框-->
+                        <div id='mask'>
+                            <div id='tk' class='over'>
+                                <div class='cut over'>
+                                    <img src='../../img/select_icon.png'/>
+                                </div>
+                                <div class='kouLing'>优惠券编码</div>
+                                <div class='intro'>
+                                    请长按复制以下编码，打开<b>手机淘宝</b>即可领券下单购买本商品
+                                </div>
+                                <input type='text' class='kl_input' value='${json.tkl}'>
+                                <!-- <div class="kl">${json.tkl}</div> -->
+                                <div class='lead'>复制这条信息，打开→ <span>手机淘宝</span></div>
+                                <div class='app'>
+                                    <a href='${json.tbUrl}' class='block'>打开手机淘宝</a>
+                                </div>
+                            </div>
+                        </div>
+                    `   ;                      
+                    $('section').append(html);    
+                }());    
+    </script>
+</body>
+</html>

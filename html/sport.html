@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!--<meta name="apple-mobile-web-app-capable" content="yes"/>-->
+    <meta content="email=no" name="format-detection"/>
+    <meta name='format-detection' content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="优好货H5">
+    <meta name="Keywords" content="优好货，优依互联网,youhaohuo">
+    <title>文体户外</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/all.css"/>
+    <link rel="stylesheet" href="../css/nav.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+</head>
+<body>
+    <div class="over" id="_body">
+        <div class="m-top"></div>
+        <!-- head -->
+        <div id="head" class="over">
+            <div class="search over">
+                <a onclick="phone_index()" class="block fl" >
+                    <img src="../img/logo.png"/>
+                </a>
+                <div class="fl input">
+                    <img src="../img/search@2x.png"/>
+                    <input type="text" placeholder="请输入关键字查找" id="search_input"/>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper wrapper_nav">
+                    <div class="swiper-slide slide_nav"><a href="phone_index.html" class='block'>全部</a></div>
+                    <div class="swiper-slide slide_nav"><a href='women.html' class='block'>女装</a></div>
+                    <div class="swiper-slide slide_nav"><a href='man.html' class='block'>男装</a></div>
+                    <div class="swiper-slide slide_nav"><a href='shoes.html' class='block'>鞋包配饰</a></div>
+                    <div class="swiper-slide slide_nav"><a href="beauty.html" class='block'>美妆</a></div>
+                    <div class="swiper-slide slide_nav"><a href="home.html" class='block'>家居</a></div>
+                    <div class="swiper-slide slide_nav"><a href="m_baby.html" class='block'>母婴</a></div>
+                    <div class="swiper-slide slide_nav"><a href='appliance.html' class='block'>数码家电</a></div>
+                    <div class="swiper-slide slide_nav"><a href='shirt.html' class='block'>内衣</a></div>
+                    <div class="swiper-slide slide_nav"><a href='food.html' class='block'>食品</a></div>
+                    <div class="swiper-slide slide_nav active"><a href='sport.html' class='block'>文体户外</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 回到头部-->
+        <a href="#" class="block" id="to_top"></a>
+        <!-- 内容-->
+        <ul id='goods_box' class="goods_box container">
+            
+        </ul>
+        <!-- 已经到最底层，没有数据了-->
+        <div class="noData">已经没有数据了哦！</div>
+         <!-- 独角兽logo-->
+        <div id="unicorn" class="unicorn over">
+            <div class="img fl">
+                <img src="../img/unicorn_logo.png"/>
+            </div>
+            <div class="fl content over">
+                所有商品点击<span>领取优惠券直接购买</span>就能优惠哦！<b>X</b>
+            </div>
+        </div>
+        <!-- 底部固定菜单栏-->
+        <nav id="menuTab" class="nav">
+            <ul class="over">
+                <li class="cur fl">
+                    <a href='phone_index.html'  class="block">
+                        <i></i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li onclick="window.location.href='type.html'" class="fl">
+                    <a class="block">
+                        <i></i>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a onclick="window.location.href='collect.html'" class="block">
+                        <i></i>
+                        <p>收藏夹</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a onclick="window.location.href='myself.html'" class="block">
+                        <i></i>
+                        <p>我的</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/masonry.pkgd.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/tab.js"></script>
+    <script src="../js/data/all.js"></script>
+    <script src="../js/data/share/share_sport.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src='../js/swiper.js'></script>
+    <!-- <script src='../js/head_nav.js'></script> -->
+    <script>
+        window.onload=function(){
+            var wid=$('.slide_nav').width();
+            $('.wrapper_nav').css({
+                'transform' : 'translate3d('+ -10*wid+'px,0,0)',
+                'transition-duration' : '0.5s'
+            });
+        }
+    </script>
+</body>
+</html>

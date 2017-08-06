@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="email=no" name="format-detection"/>
+    <meta name='format-detection' content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="优好货H5">
+    <meta name="Keywords" content="优好货，优依互联网,youhaohuo">
+    <title>商品详情及下单</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/order.css"/>
+
+</head>
+<body>
+    <!-- 商品介绍-->
+    <section class="over">
+        <div class="content">
+            <div class="good">
+                <div class="good_pic">
+                    <img src="../img/goods_1.jpg"/>
+                </div>
+                <div class="good_title over">
+                    Estee Lauder 雅诗兰黛 青春抗皱滋润套装(日霜、精华、眼霜、洁面乳)
+                </div>
+                <div class="good_detail over">
+                    <div class="price fl">
+                        <span>￥792</span>
+                    </div>
+                    <div class="back_price fl">
+                        减 <span>100</span> <b>到手价：18.82</b>
+                    </div>
+                </div>
+                <div class="over out_time">
+                    <span class="fl">优惠券结束时间：</span>
+                    <span class="fl">2天23:00</span>
+                </div>
+                <div class="shop_name over">
+                    信用：
+                    <img src="../img/tm_icon.png"/>
+                    来自：
+                    <span>unineed官网直邮</span>
+                </div>
+                <div class="foot over">
+                    <a href="javascript:;" class="block link">
+                        领券下单购买
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--口令 弹出框-->
+        <div id="mask">
+            <div id="tk" class="over">
+                <div class="cut over">
+                    <img src="../img/select_icon.png"/>
+                </div>
+                <div class="kouLing">优惠券编码</div>
+                <div class="intro">
+                    请长按复制以下编码，打开<b>手机淘宝</b>即可领券下单购买本商品
+                </div>
+                <input type="text" class='kl_input' value='￥AASEdVUu￥'>
+                <!-- <div class="kl">￥AASEdVUu￥</div> -->
+                <div class="lead">复制这条信息，打开→ <span>手机淘宝</span></div>
+                <div class="app">
+                    <a href="" class="block">打开手机淘宝</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/order.js"></script>
+    <script>
+        /*
+         $(function(){
+         $('.app').click(function(){
+         if ([[UIApplication sharedApplication] canOpenURL:taobaoUrl]) {
+
+         //能打开淘宝就打开淘宝
+
+         [[UIApplication sharedApplication] openURL:taobaoUrl];
+
+         } else if ([[UIApplication sharedApplication] canOpenURL:tmallUrl]) {
+
+         //能打开天猫就打开天猫
+
+         [[UIApplication sharedApplication] openURL:tmallUrl];
+
+         } else {
+
+         //都打不开就自己加载网页
+
+         KGAdWebVC *adWebVC = [[KGAdWebVC alloc] init];
+
+         adWebVC.url = splash_url;
+
+         [self.navigationController pushViewController:adWebVC animated:YES];
+
+         }
+         })
+         })
+         */
+    </script>
+</body>
+</html>

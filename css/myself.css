@@ -1,0 +1,45 @@
+/**
+ * Created by Administrator on 2016/11/3.
+ */
+header,section{
+    background: #fff;
+}
+header{
+    position: relative;
+}
+header div.head_icon{
+    position:absolute;top:40px;width:100%;
+}
+header div.head_icon img{
+    width:58px;height:58px;
+}
+section{
+    text-align: left;padding-bottom:60px;border-top: 1px solid #fafafa;
+}
+section div{
+    padding:16px 24px 5px 10px;font-size:15px;border-bottom: 2px solid #e3e3e3;
+}
+section div a{
+    width:100%;
+}
+/*
+section div a.agent p{
+    color:#f53e7b;font-weight: bold;font-size: 17px;margin-top:-2px;
+}
+*/
+section div a s{
+    float: right;width: 0;  height: 0;
+    display: inline-block;  margin-top:3px;
+    border-top: 8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-left:8px solid #F53e7b;border-right:0;
+}
+section div a span{
+    color:#f53e7b;
+}
+section div a img{
+    width:30px;display:inline-block;margin:-5px 5px 0 0;
+}
+section div a img.order{
+    margin-top:-2px;
+}

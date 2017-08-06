@@ -1,0 +1,81 @@
+
+.tabBox .hd ul{
+    width:100%;padding:10px;
+    /*border-bottom: 1px solid #787878;*/
+}
+.tabBox .hd ul li{
+    width:33.3%;padding:0 10px;
+    float:left;
+}
+.tabBox .hd ul li a{
+    width:100%;padding:8px 0; color:#333333;
+    border: 1px solid #333333;border-radius: 0.8rem;
+    border-bottom-color: #8B8788;
+}
+.tabBox .hd ul li.on a{
+    color:#FE4444;
+    border: 1px solid #FE4444;
+}
+/*没有订单时*/
+div.nothing{
+    position:absolute;top:150px;left:22%;
+}
+div.nothing p{
+    color:#aaaaaa;margin-top:5px;
+}
+div.nothing a{
+    border:1px  solid #C1C1C1;padding:8px 20px;margin-top: 10px;border-radius: 4px;
+    color:#ccc;
+}
+/*有订单*/
+#all_order,#no_deliver,#deliver{
+    display:none;
+}
+.all_order li,.no_deliver li,.deliver li{
+    padding:0 6px;margin-bottom: 10px; background: #ffffff;
+    border-top: 1px solid #eee;
+}
+div.order_head,div.shop_name{
+    border-bottom: 1px solid #EEEEEE;
+}
+div.order_head div{
+    width:33.3%;padding:10px 0;
+}
+div.order_head div:first-child span{
+    color:#3985FF;
+}
+div.order_head div:nth-child(2) span{
+    color:#E43942;
+}
+div.order_head div a.block{
+    padding:3px 8px;color:#f3f3f3;
+    background:#2E8967;border-radius: 5px;margin-top: -3px;
+}
+div.order_head div a.again{
+    padding:3px 8px;color:#f3f3f3;
+    background:#F19325;border-radius: 5px;margin-top: -3px;
+}
+div.shop_name,div.shop_content{
+    padding:6px 10px;
+    text-align: left;
+}
+div.shop_name div.img{
+    width:25px;
+}
+div.shop_name div.name{
+    font-size: 14px;margin:2px 0 0 10px;
+}
+div.shop_content:after{
+    content:'';display:block;clear: both;
+}
+div.shop_content div:first-child{
+    width:30%;
+}
+div.shop_content div:nth-child(2){
+    width:70%;padding:20px 0 0 10px;
+}
+div.shop_content div:nth-child(2) p{
+    line-height:18px;padding-top: 5px;
+}
+
+

@@ -1,0 +1,92 @@
+@charset "utf-8";
+body{
+    background:#fff;
+}
+section .good_title{
+    color:#525659;text-align:left;padding:5px 10px;font-size: 16px;
+    /*text-overflow: ellipsis;/!*文字隐藏后添加省略号*!/*/
+    /*white-space: nowrap;/!*强制不换行*!/*/
+    width:98%;/*不允许出现半汉字截断*/
+}
+section .price{
+    font-size:17px;text-align: left;padding:2px 10px;
+}
+section .back_price{
+    font-size:14px; padding:3px 5px 8px;text-align: left;
+}
+section .back_price span{
+    color:#fd930c;margin-right: 8px;
+}
+section .back_price b{
+    font-size:16px;border: 1px solid #Ff003c;font-weight: 500;color:#Ff003c;padding:0 3px;
+}
+section .out_time{
+    padding:0 10px 5px;color:#000;font-size:14px;font-weight:600;
+}
+section .foot{
+    width:70%;margin:30px auto;
+}
+section .foot a{
+    color:#fff;background:#Ff003c;border-radius:5px;
+    width:100%;font-size:18px;padding:10px;
+}
+section .shop_name{
+    background:#fafafa;border-bottom: 1px solid #ddd;border-top: 1px solid #ddd;
+    padding:8px 12px;font-size:12px;color:#999;text-align: left;margin-top:5px;
+}
+section .shop_name img{
+    width:7%;vertical-align: middle;margin-right:80px;
+}
+section .shop_name span{
+    color:#000000;
+}
+/*点击购买后的口令弹框*/
+#mask{
+    width:100%;height:100%;max-width:800px;position:fixed;
+    background:rgba(0,0,0,.5);z-index:100;top:0;display: none;
+}
+#tk{
+    background:#fff;padding:10px 5px 15px;
+    position: relative;top:120px;width:85%;
+    margin: 0 auto;border-radius: 5px;z-index:999 ;
+}
+#tk .cut{
+    padding-right:5px;
+}
+#tk img{
+    width:5%;
+    display: inline-block;float:right;
+}
+#tk .kouLing{
+    padding:10px;font-size:17px;font-weight: 600;color:#212121;
+}
+#tk .intro{
+    text-align: left;font-size:14px;padding:5px 10px;
+}
+#tk .intro b{
+    color:#Ff003c;font-size: 16px;font-weight: 600;
+}
+#tk .kl_input{
+    padding:10px;width:88%;font-weight:bold;
+    border: 1px solid #ECECEC;border-radius: 5px;
+    margin:2px auto 20px;text-align: center;
+}
+#tk .kl{
+    padding:10px;width:88%;font-weight:bold;
+    border: 1px solid #ECECEC;border-radius: 5px;
+    margin:2px auto 15px;text-align: center;
+}
+#tk .lead{
+    padding:3px;
+}
+#tk .lead span{
+    color:#ff003c;font-size: 16px;font-weight: 600;
+}
+#tk div.copy .copy_1{
+    width:40%;background:#ff003c;color:#fff;padding:10px 0;border-radius: 5px;
+    margin:10px auto;font-size: 14px;font-weight: 600;
+}
+#tk div.copy .old_copy{
+    width:40%;background:#06CD3E;color:#fff;padding:10px 0;border-radius: 5px;
+    margin:10px auto;font-size: 14px;font-weight: 600;opacity: 0.5;
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" href="img/logo.ico">
+    <meta content="email=no" name="format-detection"/>
+    <meta name='format-detection' content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="优好货H5">
+    <meta name="Keywords" content="优好货，优依互联网,youhaohuo">
+    <meta name="Description" content="">
+    <title>优好货</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript"> 
+        function account(){ 
+            var account = document.getElementById("i"); 
+            account.src = "html/phone_index.html";
+        } 
+        function baoB(){
+            var baoB = document.getElementById("i"); 
+            baoB.src = "html/type.html";
+        } 
+        function order(){ 
+            var order = document.getElementById("i"); 
+            order.src = "html/collect.html";
+        }
+        function myself(){
+            var order = document.getElementById("i");
+            order.src = "html/myself.html";
+        }
+        function changeFrameHeight(){
+            var ifm= document.getElementById("i"); 
+            ifm.height=document.documentElement.clientHeight-1;
+        }
+        window.onresize=function(){  
+             changeFrameHeight();  
+        } 
+    </script>
+    <style>
+        iframe{
+            width:100%;
+            margin:0 auto;
+            box-sizing: border-box;
+            /*max-width: 640px;*/
+            /*padding-bottom:5rem;*/
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <iframe src="html/phone_index.html" id="i" scrolling="" onload="changeFrameHeight()" frameborder="0"></iframe>
+    </div>
+        <nav id="menuTab" class="nav">
+            <ul class="over">
+                <li class="cur fl">
+                    <a onclick="account()"   class="block">
+                        <i></i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a onclick = "baoB()" class="block">
+                        <i></i>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a onclick = "order()"  class="block">
+                        <i></i>
+                        <p>收藏夹</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a onclick="myself()" class="block">
+                        <i></i>
+                        <p>我的</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/tab.js"></script>
+</body>
+</html>

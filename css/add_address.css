@@ -1,0 +1,41 @@
+
+div.address_head{
+    padding:8px 0 8px 10px;border-bottom: 1px solid #ccc;background: #F3F3F3;
+}
+div.back{
+    width:5%;margin-top:10px;
+}
+div.middle{
+    width:85%;font-size:16px;padding-top:7px;
+}
+div.icon{
+    width:10%;
+}
+div.icon img{
+    width:90%;
+}
+div.form{
+    background: #ffffff;text-align: left;padding-left:10px;margin-top: 10px;
+}
+div.form div{
+    padding:8px 0;border-bottom: 1px solid #ccc;
+}
+div.form div input{
+    width:80%;padding:5px;
+}
+div.form div select{
+    padding:5px 0 5px 20px;
+}
+div.form div textarea{
+    line-height: 18px;padding:5px;
+}
+div.form div:last-child{
+    border:0;
+}
+div.btn{
+    background: #fff;position:fixed;bottom:0;width:100%;max-width: 800px;
+    padding:10px;
+}
+div.btn a{
+    width:80%;padding:8px;color:#f3f3f3;background:#FF6666;
+}

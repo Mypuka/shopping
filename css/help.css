@@ -1,0 +1,25 @@
+#main{
+    background:#fff;text-align: left;
+}
+#main div{
+    padding-left: 22px;
+}
+#main div a{
+    color:#A8A8A8;border-bottom: 1px solid #F0F0F0;width:100%;padding:18px 0;font-size:14px;
+}
+#main div a s{
+    float: right;width: 0;  height: 0;
+    margin-right: 20px;
+    border-top: 8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-left:8px solid #bfc0bc;border-right:0;
+}
+
+
+
+
+
+
+
+
+

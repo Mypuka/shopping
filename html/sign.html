@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!--<meta name="apple-mobile-web-app-capable" content="yes"/>-->
+    <meta content="email=no" name="format-detection"/>
+    <meta name='format-detection' content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="优好货H5">
+    <meta name="Keywords" content="优好货，优依互联网,youhaohuo">
+    <!--<meta name="Description" content="淘粉吧返利网站-淘宝返,一个可信的淘宝返利网.">-->
+    <title>每日签到</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/sign.css"/>
+</head>
+<body>
+    <div id="_body">
+        <!-- 广告图-->
+        <div class="banner">
+            <img src="../img/nav_5.jpg"/>
+        </div>
+        <!-- 签到及内容框-->
+        <div class="sign">
+            <ul class="over">
+                <li class="fl sign" onclick="mask()">签到规则</li>
+                <li class="fl">已有　<span>6</span>　积分</li>
+                <li class="fl yes">提醒签到</li>
+            </ul>
+            <div id="dateMobile" class="dateMobile">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr class="tt">
+                            <td class="title">日</td>
+                            <td class="title">一</td>
+                            <td class="title">二</td>
+                            <td class="title">三</td>
+                            <td class="title">四</td>
+                            <td class="title">五</td>
+                            <td class="title">六</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div></div>
+                            </td>
+                            <td>
+                                <div></div>
+                            </td>
+                            <td class="can" id="j_td_1">
+                                <div>1</div>
+                            </td>
+                            <td class="can" id="j_td_2">
+                                <div>2</div>
+                            </td>
+                            <td class="can" id="j_td_3">
+                                <div>3</div>
+                            </td>
+                            <td class="can" id="j_td_4">
+                                <div>4</div>
+                            </td>
+                            <td class="can" id="j_td_5">
+                                <div>5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="can" id="j_td_6">
+                                <div>6</div>
+                            </td>
+                            <td class="can" id="j_td_7">
+                                <div>7</div>
+                            </td>
+                            <td class="can" id="j_td_8">
+                                <div>8</div>
+                            </td>
+                            <td class="can" id="j_td_9">
+                                <div>9</div>
+                            </td>
+                            <td class="can" id="j_td_10">
+                                <div>10</div>
+                            </td>
+                            <td class="can" id="j_td_11">
+                                <div>11</div>
+                            </td>
+                            <td class="can" id="j_td_12">
+                                <div>12</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="can" id="j_td_13">
+                                <div>13</div>
+                            </td>
+                            <td class="can" id="j_td_14">
+                                <div>14</div>
+                            </td>
+                            <td class="can" id="j_td_15">
+                                <div>15</div>
+                            </td>
+                            <td class="can" id="j_td_16">
+                                <div>16</div>
+                            </td>
+                            <td class="can" id="j_td_17">
+                                <div>17</div>
+                            </td>
+                            <td class="can" id="j_td_18">
+                                <div>18</div>
+                            </td>
+                            <td class="can" id="j_td_19">
+                                <div>19</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="can" id="j_td_20">
+                                <div>20</div>
+                            </td>
+                            <td class="can" id="j_td_21">
+                                <div>21</div>
+                            </td>
+                            <td class="can" id="j_td_22">
+                                <div>22</div>
+                                <div class="jf_yuan">+1</div>
+                            </td>
+                            <td class="can" id="j_td_23">
+                                <div>23</div>
+                                <div class="jf_yuan">+2</div>
+                            </td>
+                            <td class="can" id="j_td_24">
+                                <div>24</div>
+                                <div class="jf_yuan">+3</div>
+                            </td>
+                            <td class="can" id="j_td_25">
+                                <div>25</div>
+                                <div class="jf_yuan">+3</div>
+                            </td>
+                            <td class="can" id="j_td_26">
+                                <div>26</div>
+                                <div class="jf_yuan" style="color:#c2c2c2;background:#e8e8e8;border: 2px solid #d6d6d6;">+3</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="can" id="j_td_27">
+                                <div>27</div>
+                                <div class="jf_yuan" style="color:#c2c2c2;background:#e8e8e8;border: 2px solid #d6d6d6;">+3</div>
+                            </td>
+                            <td class="can on" id="j_td_28">
+                                <div>28</div>
+                                <div class="jf_yuan" style="color:#c2c2c2;background:#e8e8e8;border: 2px solid #d6d6d6;">+3</div>
+                            </td>
+                            <td class="can" id="j_td_29">
+                                <div>29</div>
+                                <div class="jf_yuan" style="color:#c2c2c2;background:#e8e8e8;border: 2px solid #d6d6d6;">+3</div>
+                            </td>
+                            <td class="can" id="j_td_30">
+                                <div>30</div>
+                                <div class="jf_yuan" style="color:#c2c2c2;background:#e8e8e8;border: 2px solid #d6d6d6;">+3</div>
+                            </td>
+                            <td>
+                                <div></div>
+                            </td>
+                            <td>
+                                <div></div>
+                            </td>
+                            <td>
+                                <div></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="qd_button">
+                <a href="" class="jf_mall">去积分商城&gt;</a>
+                <a href="" class="click_qd" onclick="yb_jifen()">
+                    <img src="../img/now.png">
+                </a>
+            </div>
+            <p class="footer_qd">明日签到,可领 <span>3</span> 积分,继续去官网签到赚取更多积分~</p>
+            <!--<p class="footer_qd">官网网址:www.taofen8.com</p>-->
+        </div>
+        <!-- 签到规则-->
+        <div id="mask">
+            <div class="tanK" style="z-index:10000;padding-bottom:3%">
+                <p class="head_banner">
+                    <img src="../img/guiZ.jpg" style="border-radius:5px">
+                </p>
+                <h1>签到规则详解</h1>
+                <p class="content over" >
+                    <span class="span1">1、</span>
+                    <span class="span2">计分规则为自然月，按日签到获取积分，第一天签到获得1积分，第二天签到获得2积分，第3天签到获得3积分，之后每天签到都获得3积分，首次连续签满10天额外奖励10积分，连续签满20天额外奖励15积分，连续签满1个月额外奖励20积分.</span>
+                </p>
+                <p class="content over" >
+                    <span class="span1">2、</span>
+                    <span class="span2">如果连续签到断掉则又从1积分开始计算.</span>
+                </p>
+                <p class="content over" >
+                    <span class="span1">3、</span>
+                    <span class="span2">每月1日从1积分开始计算.</span>
+                </p>
+                <p class="content over" >
+                    <span class="span1">4、</span>
+                    <span class="span2">本活动规则自2016年03月18日起生效.</span>
+                </p>
+                <h1>关于积分</h1>
+                <p class="content over" >
+                    <span class="span1">1、</span>
+                    <span class="span2">本积分规则由优好货制定并保留所有解释权和修改权.</span>
+                </p>
+                <p class="alert">
+                    <span class="title">
+                        ·温馨提醒·
+                    </span>
+                    <span class="content">
+                        "签到提醒"功能初始状态打开，每日仅做签到提醒辅助，但无法确保用户每日都能收到提醒消息。若因未收到微信消息提醒造成连续签到中断等情况，淘粉吧不负责承担任何责任.
+                    </span>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/sign.js"></script>
+    <script src="../js/createDate.js"></script>
+    <script>
+
+        var nowTime=new Date();
+
+        console.log( nowTime);
+        var year=nowTime.getFullYear(),month=nowTime.getMonth(),showMonth=showMonth;
+        var yue = month+1
+        var ri = nowTime.getDate()
+        if ( yue <10)
+        {
+            yue = "0" + yue;
+        }
+        if (ri <10)
+        {
+            ri = "0"+ ri;
+        }
+        $('#dataStr').html(year+"-"+ yue +"-" + ri + "");
+        $("#dateMobile td").each(function(){
+            $(this).click(function(){
+                if($(this).attr("class")!=undefined&&$(this).attr("class")!="" && $(this).attr("class")!="title"){
+                    $(this).closest("#dateMobile").find("td").removeClass("on");
+                    $(this).addClass("on");
+                }
+            });
+        });
+        function mask(){
+            $('li.sign').click(function(){
+                $('#mask').show();
+            })
+            $('#mask').click(function(){
+                $(this).hide();
+            })
+        }
+
+    </script>
+</body>
+</html>
